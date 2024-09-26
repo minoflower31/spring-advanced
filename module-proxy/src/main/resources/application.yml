@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: proxy
+
+logging:
+  level:
+    root: info
