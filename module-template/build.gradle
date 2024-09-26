@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+
+dependencies {
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
