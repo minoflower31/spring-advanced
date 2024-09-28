@@ -13,6 +13,8 @@ public class OrderControllerV1Impl implements OrderControllerV1 {
 
   @Override
   public String request(String itemId) {
+    log.info("OrderService class={}", orderService.getClass());
+
     log.info("request itemId={}", itemId);
     orderService.orderItem(itemId);
     return "ok";
