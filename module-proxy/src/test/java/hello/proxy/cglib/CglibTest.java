@@ -20,7 +20,6 @@ public class CglibTest {
 
     log.info("targetClass={}", target.getClass());
     log.info("proxyClass={}", proxy.getClass());
-    // sign-off commit
     proxy.call();
   }
 
