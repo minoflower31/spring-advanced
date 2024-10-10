@@ -2,3 +2,4 @@ rootProject.name = 'advanced'
 
 include 'module-template'
 include 'module-proxy'
+include 'module-aop'
