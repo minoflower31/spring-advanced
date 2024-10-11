@@ -3,6 +3,7 @@ package hello.moduleaop;
 import hello.moduleaop.order.OrderRepository;
 import hello.moduleaop.order.OrderService;
 import hello.moduleaop.order.aop.AspectV5Order;
+import hello.moduleaop.order.aop.AspectV6Advice;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Import;
 
 @Slf4j
 @SpringBootTest
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.TransactionAspect.class})
+@Import(AspectV6Advice.class)
 public class AopTest {
 
   @Autowired
